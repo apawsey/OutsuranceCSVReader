@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using CommandLine;
 using CsvHelper;
 
@@ -13,12 +12,12 @@ namespace CSVReader
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("CSV Person Processor");
             var parserResult = Parser.Default.ParseArguments<Options>(args);
             if (parserResult.Tag == ParserResultType.NotParsed)
                 return;
             parserResult.WithParsed(options =>
             {
+                Console.WriteLine(CommandLine.Text.HeadingInfo.Default);
                 if (!File.Exists(options.InputFile))
                 {
                     Console.WriteLine("Input file does not exist.");

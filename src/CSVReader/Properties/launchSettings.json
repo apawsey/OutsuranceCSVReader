@@ -2,7 +2,7 @@
   "profiles": {
     "CSVReader": {
       "commandName": "Project",
-      "commandLineArgs": "-i \"C:\\Users\\a_paw\\downloads\\dfata.csv\""
+      "commandLineArgs": "-i \"data.csv\""
     }
   }
 }

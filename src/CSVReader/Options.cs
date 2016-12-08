@@ -23,7 +23,9 @@ namespace CSVReader
                 if (!string.IsNullOrEmpty(_outputFolder) || string.IsNullOrWhiteSpace(InputFile)) return _outputFolder;
                 try
                 {
-                    return Path.GetDirectoryName(InputFile);
+                    //Easiest to use full fileInfo class in case of relative paths, should be optimised though
+                    FileInfo inputFileInfo = new FileInfo(InputFile);
+                    return inputFileInfo.DirectoryName;
                 }
                 catch
                 {
