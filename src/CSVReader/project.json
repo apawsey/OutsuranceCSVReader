@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+  //"runtimes": {
+  //  "win10-x64": {}
+  //},
+
+  "dependencies": {
+    "CommandLineParser": "2.1.1-beta",
+    "CsvHelper": "3.0.0-beta7",
+    "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.1"
+    }
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "imports": "dnxcore50"
+    }
+  }
+}
