@@ -1,4 +1,5 @@
 # CSVReader
+_Note: requires <a href="https://www.microsoft.com/net/download/core#/lts/runtime">.NET Core 1.0.1 Runtime</a>_
 
 Command line usage:
 
